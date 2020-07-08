@@ -3,8 +3,11 @@
     <div class="my-head">
       <div>
         Блог разработки
-        <!-- DEV BLOG -->
-        <a href="http://quiz.bielecki.ru/" target="_blank" style="margin-left: 0.5em">Akivano.ru</a>
+        <a
+          href="http://quiz.bielecki.ru/"
+          target="_blank"
+          style="margin-left: 0.5em"
+        >Akivano.ru</a>
       </div>
     </div>
     <div class="main-content">
@@ -13,10 +16,12 @@
         <div class="left">
           <router-view></router-view>
         </div>
-        <div class="right"></div>
+        <div class="right">
+          <div>Следи за нами в ВК</div>
+          <v-btn class="my-btn" outlined color="#0D47A1">VK</v-btn>
+        </div>
       </div>
     </div>
-    <v-btn class="my-btn" outlined color="#B71C1C">hello</v-btn>
   </div>
 </template>
 
@@ -39,9 +44,7 @@ export default {
 * {
   font-family: "Roboto";
 }
-.my-btn {
-  margin: 4em;
-}
+
 .my-head {
   display: flex;
   justify-content: center;
@@ -73,18 +76,22 @@ export default {
 }
 .content-block {
   margin: 2em;
-  border: 1px solid gray;
   display: flex;
-  // justify-content: space-between;
-  .left{
+  .left {
     flex-grow: 1;
-    border: 1px solid gray;
     margin-right: 1em;
   }
-  .right{ 
-    min-width: 300px;
+  .right {
+    margin-top: 2em;
+    min-width: 200px;
     flex-grow: 0;
-    border: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .my-btn {
+      margin-top: 1em;
+      width: 100px;
+    }
   }
 }
 </style>
