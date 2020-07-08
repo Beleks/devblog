@@ -1,18 +1,22 @@
 <template>
-  <div>
-    hello
-    <v-divider inset="true" dark="true"></v-divider>
-  </div>
+  <main-layoute>
+    <router-view></router-view>
+  </main-layoute>
 </template>
 
 <script>
+import MainLayoute from "@/layouts/MainLayoute";
 export default {
   name: "App",
 
-  components: {},
+  components: {
+    MainLayoute
+  },
 
   data: () => ({
     //
   })
 };
 </script>
+<style lang="scss">
+</style>
