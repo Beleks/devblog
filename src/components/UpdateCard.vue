@@ -5,16 +5,18 @@
     </div>
     <div class="section">
       <div class="left">
-        <div class="img"><img src="../img/10072020.png" alt=""></div>
+        <div class="img">
+          <img src="../img/10072020.png" alt />
+        </div>
         <div class="des">
           <div class="date">10.07.2020</div>
         </div>
       </div>
       <div class="right">
-        <span class="des">1) Теперь вы можете зарегестрироваться на сайте</span>
+        <span class="des strong">1) Теперь вы можете зарегестрироваться на сайте</span>
         <span
           class="des"
-        >Для успешной регистрации вам на почту придет письмо с подтверждением. Помимо почты и пароля вас попросят ввести имя(Оно будет отображаться в вашем личном кабинете и будет видно только вам). </span>
+        >Для успешной регистрации вам на почту придет письмо с подтверждением. Помимо почты и пароля вас попросят ввести имя(Оно будет отображаться в вашем личном кабинете и будет видно только вам).</span>
       </div>
     </div>
   </div>
@@ -30,7 +32,7 @@ export default {};
     // justify-content: center;
     align-items: center;
     padding: 1em 3em;
-    color: rgb(50,183,108);
+    color: rgb(50, 183, 108);
   }
 }
 
@@ -41,13 +43,13 @@ export default {};
       max-width: 400px;
       max-height: 250px;
       // background: image('../img/10072020.png')
-      img{
+      img {
         max-width: 400px;
         max-height: 250px;
       }
     }
     .des {
-      border-top: 2px solid rgb(50,183,108);
+      border-top: 2px solid rgb(50, 183, 108);
       padding: 0.5em;
       display: flex;
       margin-top: 1em;
@@ -63,11 +65,14 @@ export default {};
     padding: 1em;
     font-size: 1.1rem;
     max-width: 650px;
+    .strong {
+      font-weight: 600;
+    }
 
     span:not(:first-child) {
       margin-top: 1em;
-      // color: rgb(123,127,132);
-      line-height: 150%;
+      color: rgb(50, 67, 85);
+      line-height: 1.7;
     }
   }
 }

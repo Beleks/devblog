@@ -7,7 +7,7 @@
           href="http://quiz.bielecki.ru/"
           target="_blank"
           style="margin-left: 0.5em"
-        >Akivano.ru</a>
+        >Akiwano.ru</a>
       </div>
     </div>
     <div class="main-content">
